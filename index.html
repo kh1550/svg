@@ -20,8 +20,74 @@
         width: 400px;
       }
 
-      #cat2, #cat3, #cat4, #cat5 {
-        display: none;
+      #cat1 {
+        animation-name: one;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+
+      #cat2 {
+        animation-name: two;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+
+      #cat3 {
+        animation-name: three;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+
+      #cat4 {
+        animation-name: four;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+
+      #cat5 {
+        animation-name: five;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes one {
+        0% {opacity:1;}
+        25% {opacity:0;}
+        50% {opacity:0;}
+        75% {opacity:0;}
+        100% {opacity:0;}
+      }
+
+      @keyframes two {
+        0% {opacity:0;}
+        25% {opacity:1;}
+        50% {opacity:0;}
+        75% {opacity:0;}
+        100% {opacity:0;}
+      }
+
+      @keyframes three {
+        0% {opacity:0;}
+        25% {opacity:0;}
+        50% {opacity:1;}
+        75% {opacity:0;}
+        100% {opacity:0;}
+      }
+
+      @keyframes four {
+        0% {opacity:0;}
+        25% {opacity:0;}
+        50% {opacity:0;}
+        75% {opacity:1;}
+        100% {opacity:0;}
+      }
+
+      @keyframes five {
+        0% {opacity:0;}
+        25% {opacity:0;}
+        50% {opacity:0;}
+        75% {opacity:0;}
+        100% {opacity:1;}
       }
     </style>
   </head>
@@ -39,7 +105,7 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li><a href="../">Home <span class="sr-only">(current)</span></a></li>
-              <li><a href="">SVG</a></li>
+              <li><a href="../svg/">SVG</a></li>
               <li><a href="../css/">CSS</a></li>
               <li class="active"><a href="../vc/">VC</a></li>
               <li><a href="">Canvas</a></li>
@@ -3380,6 +3446,7 @@
               c0.7-1.4-0.5-2.4-1.9-2.9C147.02,85.7,145.919,85.399,144.819,85.1z"/>
           </g>
         </svg>
+        <p>From <a href="http://i6.cims.nyu.edu/~mc4514/drawing-on-the-web/svg/">Cat in Motion</a>.</p>
       </div>
     </div>
   </body>
